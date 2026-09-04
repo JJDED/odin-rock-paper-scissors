@@ -1,13 +1,5 @@
 console.log("Hello World!")
 
-//console.log(humanSelection);
-//console.log(computerSelection);
-
-//const humanSelection = getHumanChoice();
-//const computerSelection = getComputerChoice(3);
-
-//playRound(humanSelection, computerSelection);
-
 playGame();
 
 function getComputerChoice(max) {
