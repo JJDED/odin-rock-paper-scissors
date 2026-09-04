@@ -30,13 +30,19 @@ function playGame() {
     let computerScore = 0;
 
     function playRound(humanChoice, computerChoice) {
-    if (humanChoice.toLowerCase() === "rock" && computerChoice.toLowerCase() === "rock" || humanChoice.toLowerCase() === "paper" && computerChoice.toLowerCase() === "paper" || humanChoice.toLowerCase() === "scissors" && computerChoice.toLowerCase() === "scissors")
+        if (humanChoice.toLowerCase() === "rock" && computerChoice.toLowerCase() === "rock"
+            || humanChoice.toLowerCase() === "paper" && computerChoice.toLowerCase() === "paper"
+            || humanChoice.toLowerCase() === "scissors" && computerChoice.toLowerCase() === "scissors")
     {
         console.log("It's a tie!")
-    } else if (humanChoice.toLowerCase() === "rock" && computerChoice.toLowerCase() === "scissors" || humanChoice.toLowerCase() === "paper" && computerChoice.toLowerCase() === "rock" || humanChoice.toLowerCase() === "scissors" && computerChoice.toLowerCase() === "paper") {
+        } else if (humanChoice.toLowerCase() === "rock" && computerChoice.toLowerCase() === "scissors"
+            || humanChoice.toLowerCase() === "paper" && computerChoice.toLowerCase() === "rock"
+            || humanChoice.toLowerCase() === "scissors" && computerChoice.toLowerCase() === "paper") {
         humanScore++;
         console.log(`You won! ${humanChoice} beats ${computerChoice}!`)
-    } else if (humanChoice.toLowerCase() === "rock" && computerChoice.toLowerCase() === "paper" || humanChoice.toLowerCase() === "paper" && computerChoice.toLowerCase() === "scissors" || humanChoice.toLowerCase() === "scissors" && computerChoice.toLowerCase() === "rock") {
+        } else if (humanChoice.toLowerCase() === "rock" && computerChoice.toLowerCase() === "paper"
+            || humanChoice.toLowerCase() === "paper" && computerChoice.toLowerCase() === "scissors"
+            || humanChoice.toLowerCase() === "scissors" && computerChoice.toLowerCase() === "rock") {
         computerScore++;
         console.log(`You lost... ${computerChoice} beats ${humanChoice}...`)
     }
